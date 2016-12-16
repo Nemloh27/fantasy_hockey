@@ -1,0 +1,64 @@
+<html lang="en" ng-app = "EricsFantasyHockeyTeams">
+  <head>
+    <meta charset="utf-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="http://kendo.cdn.telerik.com/2016.1.406/js/kendo.all.min.js"></script> 
+		<script src="app.js"></script>
+		<script src="/components/home.controller.js"></script>
+		<script src="/components/fph.controller.js"></script>
+		<script src="/services/teams.service.js"></script>
+    <!-- 
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="http://kendo.cdn.telerik.com/2016.1.406/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="http://kendo.cdn.telerik.com/2016.1.406/styles/kendo.material.min.css" />
+		<link rel="stylesheet" href="http://kendo.cdn.telerik.com/2016.1.406/styles/kendo.default.mobile.min.css" />
+		-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/starter.css" >
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#/home">Fantasy teams</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#/home">Home</a></li>
+            <li><a href="#/fph">Frozen Pond Hockey</a></li>
+            <li><a href="#/trn">The Real NHL</a></li>
+            <li><a href="#/dtl">Dream Team League</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="starter-template">
+      </div>
+      <div id="main" />
+			<div ng-view></div>
+		</div>
+
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+
+</body></html>
